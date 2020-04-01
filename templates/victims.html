@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <form action='/victims' method='POST'>
+        <h3>Submit Victims</h3>
+        <div>
+            <label>Name: </label>
+            <input type="text" name="victim">
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+
+{% endblock %}

@@ -1,0 +1,60 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 2.5em;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3, p, form {
+    padding: 1.5em;
+}
+
+nav {
+    top: 0;
+    position: fixed;
+    width: 100vw;
+    background-color: slategrey;
+    min-height: 1em;
+    text-align: left;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: .25em;
+    font-size: 1.25em;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    color: green;
+}
+
+form {
+    margin-right: .25em;
+    padding-top: 2.5em;
+}
+
+footer {
+    background-color: slategrey;
+    bottom: 0;
+    min-height: 1.5em;
+    position: fixed;
+    text-align: center;
+    width: 100vw;
+}

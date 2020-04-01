@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Plot</title>
+    <link rel=stylesheet href="/static/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="/characters">Characters</a>
+            </li>
+            <li>
+                <a href="/victims">Victims</a>
+            </li>
+            <li>
+                <a href="/plots">Plots</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        {% block content %} {% endblock %}
+    </main>
+    <footer>
+        Made by David Schawel
+    </footer>
+</body>
+</html>
