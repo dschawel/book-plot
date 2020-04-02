@@ -9,5 +9,11 @@
         </div>
         <input type="submit" value="Submit">
     </form>
+    <hr>
+    <h3>Victims</h3>
+    {% for victim in victims %}
+        <p>{{ victim.victim }}</p>
+    {% endfor %}
+
 
 {% endblock %}

@@ -1,6 +1,7 @@
 # Flask app
 from flask import Flask, redirect, render_template, request
 from pymongo import MongoClient
+import random 
 
 # Database set up
 client = MongoClient('mongodb://localhost:27017')
@@ -13,6 +14,9 @@ app = Flask(__name__)
 
 @app.route('/', methods=('GET', 'POST'))
 def home():
+    def get_random_doc():
+        count = plots.count()
+        return plots.find()[random.randrange(count)]
     return render_template('home.html')
         
 @app.route('/characters', methods=('GET', 'POST'))
@@ -24,7 +28,7 @@ def characters():
         db.characters.insert_one({
             'character': request.form['character']
         })
-        return redirect('/')
+        return redirect('/characters')
 
 @app.route('/victims', methods=('GET', 'POST'))
 def victims():
@@ -35,7 +39,7 @@ def victims():
         db.victims.insert_one({
             'victim': request.form['victim']
         })
-        return redirect('/')
+        return redirect('/victims')
 
 @app.route('/plots', methods=('GET', 'POST'))
 def plots():
@@ -46,7 +50,7 @@ def plots():
         db.plots.insert_one({
             'plot': request.form['plot']
         })
-        return redirect('/')
+        return redirect('/plots')
         
 # Getting the server up and running
 if __name__ == '__main__':

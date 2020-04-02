@@ -5,7 +5,6 @@ html, body {
 
 h1 {
     text-align: center;
-    margin: 0 auto;
     padding-top: 2.5em;
 }
 
@@ -13,8 +12,23 @@ h2 {
     text-align: center;
 }
 
-h3, p, form {
+h3, form {
     padding: 1.5em;
+}
+
+p {
+    padding-left: 1.5em
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    font-size: .75em;
+    height: 5em;
+    width: 10em;
+    background-color: red;
+    border: .25em solid black;
+    border-radius: 1em;
 }
 
 nav {
@@ -53,7 +67,7 @@ form {
 footer {
     background-color: slategrey;
     bottom: 0;
-    min-height: 1.5em;
+    min-height: 1em;
     position: fixed;
     text-align: center;
     width: 100vw;

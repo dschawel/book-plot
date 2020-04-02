@@ -9,5 +9,10 @@
         </div>
         <input type="submit" value="Submit">
     </form>
+    <hr>
+    <h3>Characters</h3>
+    {% for character in characters %}
+        <p>{{ character.character }}</p>
+    {% endfor %}
 
 {% endblock %}

@@ -9,5 +9,10 @@
         </div>
         <input type="submit" value="Submit">
     </form>
+    <hr>
+    <h3>Plots</h3>
+    {% for plot in plots %}
+        <p>{{ plot.plot }}</p>
+    {% endfor %}
 
 {% endblock %}
